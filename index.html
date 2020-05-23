@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Pizza Design</title>
+</head>
+
+<body>
+    <div class="app">
+        <header class="d-flex-center flex-column">
+            <div class="d-flex jc-between ai-center w-100">
+
+                <div class="d-flex-center" style="letter-spacing: 2px; font-size: 13px; color: #444;"><span class="material-icons" style="margin-right: 5px; color: #FF3031;">local_pizza</span>PIZZARIA</div>
+                
+                <div id="pizza-title">
+                    <h1>Pizza de Marguerita</h1>
+                </div>
+                <div class="d-flex-center" style="width: 101px;">
+                    <button class="no-styled-button" type="button" style="margin-right: 20px;">
+                        <span class="material-icons count-indicators" style="color: #334;">
+                            local_mall
+                            <span class="indicator">0</span>
+                        </span>
+                    </button>
+                    <button class="no-styled-button" type="button">
+                        <span class="material-icons" style="color: #334;">menu</span>
+                    </button>
+                </div>
+            </div>
+            <h5>Pizza do mês</h5>
+        </header>
+
+        <div class="conteudo">
+            <img src="https://i.ya-webdesign.com/images/tomato-slice-png-14.png" alt="" class="float-img" id="float-tomatol">
+            <img src="https://i.ya-webdesign.com/images/tomato-slice-png-14.png" alt="" class="float-img" id="float-tomator">
+            <img src="https://i.dlpng.com/static/png/496339_thumb.png" alt="" class="float-img" id="float-leaf">
+            <div class="d-flex content">
+                <div class="fg-1 information">
+                    <h5>Information</h5>
+                    <p>Mild and creaty cheeses, black olives, zetty pepperony & our signature Italian-Style Pizza Sauce.</p>
+                    <button class="d-flex-center button-add" type="button"  style="margin-bottom: 30px;">
+                        <span class="material-icons">add</span>
+                        Add Toppings
+                    </button>
+                    <h5>Porções</h5>
+                    <div class="d-flex-center" style="width: fit-content;">
+                        <button class="d-flex-center no-styled-button button-porcoes" type="button"><span class="material-icons">remove</span></button>                
+                        <div style="margin: 0 10px">01</div>
+                        <button class="d-flex-center no-styled-button button-porcoes" type="button"><span class="material-icons">add</span></button>
+                    </div>
+                </div>
+                <div class="fg-1 controls d-flex-center flex-column">
+                    <div class="controls-size">
+                        <div class="control-button d-flex-center" data-size="p">P</div>
+                        <div class="control-button d-flex-center selected" data-size="m">M</div>
+                        <div class="control-button d-flex-center" data-size="g">G</div>
+                    </div>
+                    <div class="controls-carrousel d-flex-center flex-column">
+                        <button class="no-styled-button d-flex-center btn-slide" type="button" id="btn-back">
+                            <span class="material-icons hover">arrow_back</span>
+                            <span class="material-icons d-flex-center">arrow_back</span>
+                        </button>
+                        <button class="no-styled-button d-flex-center btn-slide" type="button" id="btn-forw">
+                            <span class="material-icons hover">arrow_forward</span>                   
+                            <span class="material-icons d-flex-center">arrow_forward</span>                   
+                        </button>
+                    </div>
+                </div>
+                <div class="fg-1 add">
+                    <h5>Preço</h5>
+                    <h3 style="margin: 15px 0 25px 0;">R$ 60,00</h3>
+                    <button class="d-flex-center button-add" type="button" id="btn-adicionar">
+                        <span class="material-icons">add</span>
+                        Adicionar à sacola
+                    </button>
+                </div>
+            </div>            
+            <div class="pizza-carrousel">                
+                    <div class="pizza prev-p">
+                        <div class="content">
+                            <img src="https://pngimg.com/uploads/pizza/pizza_PNG44092.png" alt="Não encontrada">
+                        </div>
+                    </div>
+
+                    <div class="pizza prev">
+                        <div class="content">
+                            <img src="https://pngimg.com/uploads/pizza/pizza_PNG44092.png" alt="Não encontrada">
+                        </div>
+                    </div>
+                    <div class="pizza active">
+                        <div class="content">
+                            <img src="https://pngimg.com/uploads/pizza/pizza_PNG44092.png" alt="Não encontrada">
+                        </div>
+                    </div>
+                    <div class="pizza next">
+                        <div class="content">
+                            <img src="https://pngimg.com/uploads/pizza/pizza_PNG44092.png" alt="Não encontrada">
+                        </div>
+                    </div>
+
+                    <div class="pizza next-n">
+                        <div class="content">
+                            <img src="https://pngimg.com/uploads/pizza/pizza_PNG44092.png" alt="Não encontrada">
+                        </div>
+                    </div>
+                </div>            
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

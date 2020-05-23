@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.d-flex {display: flex!important;}
+.d-flex-center {display: flex!important; align-items: center; justify-content: center;}
+.flex-column {flex-direction: column;}
+.w-100 {width: 100%;}
+.fg-1 {flex-grow: 1;}
+
+.jc-between {justify-content: space-between;}
+.ai-center {align-items: center;}
+
+.app {
+    padding-top: 40px;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-image: linear-gradient(180deg, #F4F4F4, #EAEAEA);
+}
+
+    .app > header {
+        color: #334;
+        padding: 0px 45px;
+        margin-bottom: 25px;
+    }
+    .app > header > h5 {font-weight: 400; margin-top: 5px;}
+
+#pizza-title {
+    position: relative;
+    height: 40px;
+    font-size: 15px;
+}
+
+#pizza-title h1 {
+    position: absolute;
+    left: 50%;
+    width: max-content;
+    transform: translateX(-50%);
+    transition: all 0.4s ease-in-out;
+}
+#pizza-title h1.hide {
+    opacity: 0;
+    margin-top: -60px;
+}
+
+.no-styled-button {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+}
+
+.count-indicators {
+    position: relative;
+}
+
+.count-indicators .indicator {
+    position: absolute;
+    background-color: #FF3031;
+    width: 15px;
+    height: 15px; 
+    font-size: 10px;
+    right: -5px;
+    padding-top: 3px;
+    text-align: center;
+    color: #FFFF;
+    border-radius: 100%;    
+}
+
+    .conteudo .content {
+        position: absolute;
+        margin-top: 10px;
+        z-index: 1;
+        width: 100%;
+        padding: 0 60px;
+    }
+    .conteudo h5 {
+        font-size: 13px;
+        color: #BBB;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    .conteudo p {font-size: 13px; font-weight: 400; letter-spacing: 0.8px; margin-bottom: 26px;}
+    .information .button-add {
+        background-color: transparent;
+        color: #556;
+        border: 1px solid #556;
+        box-shadow: none;
+    }
+
+.controls-size {   
+    margin-bottom: 15px;     
+    width: 210px;
+    height: 40px;
+    display: flex;
+    align-items: center;    
+    justify-content: space-around;
+}
+
+.controls-size > div {
+    cursor: pointer;
+    font-size: 12.3px;
+    font-weight: 400;
+    border: 1px solid #AAA;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    color: #AAA;
+    transition: all 0.2s ease-in-out;
+}
+
+.controls-size > div.selected {
+    color: #334;
+    width: 40px;
+    height: 40px;
+    font-weight: 700;
+    background-color: #FFF;
+    border: #FFF;
+    box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, .1);
+}
+
+.content > div {
+    width: calc(100% / 3);
+}
+
+.controls-carrousel {
+    width: 65px;
+    margin-top: 12px;
+    backdrop-filter: blur(6px);
+    height: 140px;
+    border-radius: 70px;
+    box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, .04);
+    background-color: rgba(255, 255, 255, .5);
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.controls-carrousel .material-icons {
+    font-size: 16px;
+    cursor: pointer;
+    color: #334;       
+}
+
+
+.button-add {
+    font-family: Roboto;
+    border-radius: 12px;
+    box-shadow: 1px 2px 6px 2px rgba(255, 48, 49, .3);
+    border: none;
+    background-color: #FF3031;
+    color: #FFF;
+    font-weight: normal;
+    padding: 12px 14px;
+    cursor: pointer;
+    outline: none;
+}
+
+.button-porcoes {
+    color: #666;
+    border: 1px solid #CCC;
+    border-radius: 100%;
+    padding: 4px;
+}
+
+.button-porcoes .material-icons {font-size: 16px;}
+
+.button-add .material-icons {font-size: 16px; margin-right: 5px;}
+
+.btn-slide {
+    height: 40px;
+    flex-direction: column;     
+}
+
+    .btn-slide:hover .material-icons.hover {height: 16px;opacity: 1;}
+    .btn-slide:hover .material-icons {height: 0px; opacity: 0;}
+
+    .btn-slide .material-icons.hover {
+        height: 0px;
+        opacity: 0;
+        color: #FF3031;
+    }
+
+    .btn-slide .material-icons {
+        height: 40px; 
+        text-shadow: 0px 0px 2px rgba(0, 0, 0, .2);
+        text-overflow: clip;
+        overflow: hidden;        
+        transition: all 0.4s ease-in-out;
+    }
+
+.float-img {
+    position: fixed;
+    z-index: 2;    
+}
+
+    #float-tomatol {
+        width: 100px;
+        left: -60px;
+        top: 150px;
+        transform: rotate(45deg);
+    }
+
+    #float-tomator {
+        width: 100px;
+        right: -50px;
+        top: 220px;        
+        transform: rotate(45deg);
+    }
+
+    #float-leaf {
+        width: 200px;
+        transform: rotate(170deg);
+        clip: rect(84px, 250px, 340px, 0px);
+        right: -130px;
+        top: -200px;
+    } 
+
+    
+    .pizza-carrousel .pizza {
+        position: fixed;
+        margin-bottom: -110px;        
+        height: 300px;
+        width: 300px;
+        border-radius: 100%;
+        background-color: #EAEAEA;
+        padding: 16px;        
+        display: flex;
+        bottom: -10px; 
+        transform: translateX(-50%);
+        transition: all .8s ease-in-out;
+    }
+
+    .pizza-carrousel .pizza > .content {
+        position: static;
+        margin-top: 0;
+        background-color: #F4F4F4;
+        border-radius: 100%;  
+        padding: 15px;
+    }
+    .pizza-carrousel .pizza img {
+        width: 100%;
+        background-position: center;        
+    }
+    .pizza-carrousel .pizza.prev {
+        left: 0;
+    }
+    .pizza-carrousel .pizza.next {
+        left: 100%;
+    }
+    .pizza-carrousel .pizza img {transition: all .8s ease-in-out}
+
+    .pizza-carrousel .pizza.prev img{transform: rotate(120deg);}
+    .pizza-carrousel .pizza.next img{transform: rotate(-120deg);}
+
+    .pizza-carrousel .pizza.active {
+        bottom: -10px;
+        left: 50%;        
+        height: 500px;
+        width: 500px;
+    }    
+    .pizza-carrousel .pizza.active.p {transform: translateX(-50%) scale(0.85);}
+    .pizza-carrousel .pizza.active.g {transform: translateX(-50%) scale(1.2);}    
+
+    .pizza-carrousel .pizza.active.move {
+        transition: all .5s ease-in-out;
+        margin: 0;
+        bottom: 100%;
+        left: 100%;
+        transform: translate(-130px , 80px);
+        padding: 2px;        
+        width: 40px;
+        height: 40px;
+    }
+    .pizza-carrousel .pizza.active.move .content {
+        padding: 4px;
+    }
+    
+    .prev-p {
+        transform: translateX(-100%)!important;
+    }
+    .next-n {
+        left: 100%;
+        transform: translateX(100%)!important;        
+    }
